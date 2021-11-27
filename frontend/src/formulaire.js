@@ -8,26 +8,38 @@ const Testform = props => {
     <div className="bloc text-center">
       <Form>
         <Form.Group controlId="formBasicEmail">
-        <Form.Label>Rechercher un animal</Form.Label>
-        <Form.Control type="email" placeholder="Entrez le nom de l'animal" />
-        <Form.Text className="text-muted">
-          Les animaleries
-        </Form.Text>
+        <Form.Label>Rechercher l'animal souhaité</Form.Label>
+        <Form.Control type="email" placeholder="Quel animal voulez vous ?" />
         </Form.Group>
+        <br>
+        </br>
         <Form.Group>
-        <Button variant="success" type="submit">
-          Rechercher
+        <Button variant="danger" type="submit">
+          Rechercher 
         </Button>
         </Form.Group>
-
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Rechercher un Employé</Form.Label>
-          <Form.Control type="email" placeholder="Entrez le nom de l'employé" />
-          <Form.Text className="text-muted">
-            Tous nos employés sont certifiés.
-          </Form.Text>
+        <Form.Group controlId="formBasicEmail">
+        <br>
+        </br>
+        <Form.Label>Rechercher le vendeur le plus proche</Form.Label>
+        <Form.Control type="email" placeholder="Où vivez vous?" />
         </Form.Group>
-        <Button variant="warning" type="submit">
+        <br>
+        </br>
+        <Button variant="danger" type="submit">
+          Rechercher 
+        </Button>
+        <br>
+        </br>
+        <Form.Group controlId="formBasicPassword">
+        <br>
+        </br>
+          <Form.Label>Rechercher par le nom du vendeur</Form.Label>
+          <Form.Control type="email" placeholder="Entrez le nom du Vendeur" />
+        </Form.Group>
+        <br>
+        </br>
+        <Button variant="danger" type="submit">
           Rechercher
         </Button>
       </Form>
