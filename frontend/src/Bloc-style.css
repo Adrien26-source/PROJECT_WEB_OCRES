@@ -1,0 +1,49 @@
+body{
+    background: radial-gradient(grey, green);
+  }
+  
+  .bloc{
+    width: 20rem;
+    background-color:MediumSpringGreen;
+  }
+  
+  .bloc:hover{
+    box-shadow: 4px 8px 18px blue !important;
+  }
+  
+  .bloc-body{
+    padding: 3rem 0 !important;
+  }
+  
+  .bloc-text{
+    font-size: 1.1rem;
+    padding: 0.4rem 1.9rem;
+    font-weight: bold;
+  }
+  
+  .container-fluid{
+    padding-top: 6rem;
+  }
+  
+  img.profil{
+    height: 260px;
+    width: 300px;
+    margin-top: 40px;
+  }
+  
+  img.photos{
+    height: 220px;
+    width: 280px;
+  }
+  
+  Form{
+    padding: 20px;
+    height:300px;
+  }
+  
+  a.formulaire{
+    position: 'absolute';
+    left: '50%';
+     top: '50%';
+    transform: 'translate(-50%, -50%)';
+  }
