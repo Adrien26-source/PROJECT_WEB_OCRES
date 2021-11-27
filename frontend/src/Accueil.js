@@ -62,10 +62,10 @@ function Menu() {
     <div className="container-fluid d-flex justify-content-center">
     <div className="row">
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Produits imgsrc={imageprofil} textbutton="Voir Profil" title="Denis Alfonse" description="Statut : Employé"/>
+        <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant que visiteur"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testventes textbutton="Voir" title="Liste des animaux" description="Animaux"/>
+        <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
         <Testgraphique textbutton="Visualiser" title="Ventes" description="ventes des animaux en €"/>

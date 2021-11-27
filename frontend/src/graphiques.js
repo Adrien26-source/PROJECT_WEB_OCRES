@@ -7,40 +7,40 @@ import {
 
 const data = [
   {
-    name: 'Janvier', nombre_de_ventes_des_animaux: 3000, amt: 2400,
+    name: 'Janvier', AchatDesAnimaux: 3000, amt: 2400,
   },
   {
-    name: 'Février', nombre_de_ventes_des_animaux: 500, amt: 2210,
+    name: 'Février', AchatDesAnimaux: 0, amt: 2210,
   },
   {
-    name: 'Mars', nombre_de_ventes_des_animaux: 1500, amt: 2290,
+    name: 'Mars', AchatDesAnimaux: 0, amt: 2290,
   },
   {
-    name: 'Avril', nombre_de_ventes_des_animaux: 8000, amt: 2000,
+    name: 'Avril', AchatDesAnimaux: 3500, amt: 2000,
   },
   {
-    name: 'Mai', nombre_de_ventes_des_animaux: 3100, amt: 2181,
+    name: 'Mai', AchatDesAnimaux: 2500, amt: 2181,
   },
   {
-    name: 'Juin', nombre_de_ventes_des_animaux: 7400, amt: 2500,
+    name: 'Juin', AchatDesAnimaux: 0, amt: 2500,
   },
   {
-    name: 'Juillet', nombre_de_ventes_des_animaux: 2000, amt: 2100,
+    name: 'Juillet', AchatDesAnimaux: 4500, amt: 2100,
   },
   {
-    name: 'Août', nombre_de_ventes_des_animaux: 1500, amt: 2100,
+    name: 'Août', AchatDesAnimaux: 1000, amt: 2100,
   },
   {
-    name: 'Septembre', nombre_de_ventes_des_animaux: 5700, amt: 2100,
+    name: 'Septembre', AchatDesAnimaux: 1600, amt: 2100,
   },
   {
-    name: 'Octobre', nombre_de_ventes_des_animaux: 4000, amt: 2100,
+    name: 'Octobre', AchatDesAnimaux: 5000, amt: 2100,
   },
   {
-    name: 'Novembre', nombre_de_ventes_des_animaux: 5000, amt: 2100,
+    name: 'Novembre', AchatDesAnimaux: 0, amt: 2100,
   },
   {
-    name: 'Décembre', nombre_de_ventes_des_animaux: 9000, amt: 2100,
+    name: 'Décembre', AchatDesAnimaux: 1500, amt: 2100,
   },
 ];
 
@@ -62,7 +62,7 @@ export default class Graphique extends PureComponent {
         <YAxis />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="nombre_de_ventes_des_animaux" stroke="#8884d8" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="AchatDesAnimaux" stroke="blue" activeDot={{ r: 8 }} />
       </LineChart>
     );
   }

@@ -5,6 +5,7 @@ body{
   .bloc{
     width: 20rem;
     background-color:MediumSpringGreen;
+
   }
   
   .bloc:hover{
@@ -39,6 +40,7 @@ body{
   Form{
     padding: 20px;
     height:300px;
+    
   }
   
   a.formulaire{
@@ -46,4 +48,5 @@ body{
     left: '50%';
      top: '50%';
     transform: 'translate(-50%, -50%)';
+
   }
