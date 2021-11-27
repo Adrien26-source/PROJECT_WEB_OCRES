@@ -3,7 +3,7 @@ body{
   }
   
   .bloc{
-    width: 20rem;
+    width: 25rem;
     background-color:MediumSpringGreen;
 
   }
@@ -27,9 +27,9 @@ body{
   }
   
   img.profil{
-    height: 260px;
-    width: 300px;
-    margin-top: 40px;
+    height: 400px;
+    width: 360px;
+    margin-top: 0px;
   }
   
   img.photos{

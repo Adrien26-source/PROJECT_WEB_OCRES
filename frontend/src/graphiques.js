@@ -54,7 +54,7 @@ export default class Graphique extends PureComponent {
         height={300}
         data={data}
         margin={{
-          top: 5, right: 30, left: 0, bottom: 5,
+          top: 50, right: 0, left: 50, bottom: -25,
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />

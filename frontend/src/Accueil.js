@@ -65,10 +65,10 @@ function Menu() {
         <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant que visiteur"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles"/>
+        <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles" description="Le nombre disponible par type d'animal"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testgraphique textbutton="Visualiser" title="Ventes" description="ventes des animaux en €"/>
+        <Testgraphique textbutton="Modifier" title="Achats" description="Achats des animaux en €"/>
       </div>
     </div>
   </div>

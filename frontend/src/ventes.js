@@ -19,7 +19,7 @@ export default class Ventes extends PureComponent {
   render() {
     return (
             <BarChart width={290} height={290} data={data1} stackOffset="sign"
-            margin={{top: 50, right: 30, left: 20, bottom: -30}}>
+            margin={{top: 50, right: 0, left: 50, bottom: -30}}>
        <CartesianGrid strokeDasharray="3 3"/>
        <XAxis dataKey="name"/>
        <YAxis/>

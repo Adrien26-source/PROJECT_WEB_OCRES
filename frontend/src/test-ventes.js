@@ -9,9 +9,11 @@ const Testventes = props => {
       <div className="overflow">
         <Ventes />
       </div>
-      <div className="bloc-body text-dark">
+      <div className="bloc-body text-danger">
+      <br>                                                                                             
+        </br>  
         <h4 className="bloc-title">{props.title}</h4>
-        <p className="bloc-text text-secondary">
+        <p className="bloc-text text-primary">
             {props.description}
         </p>
         <Form>
@@ -19,9 +21,7 @@ const Testventes = props => {
         <Form.Control type="email" placeholder="Entrez le nom de l'animal" />
         <Form.Text className="text-muted">
         <br>                                                                                             
-        </br>  
-        <br>                                                                                             
-        </br>                                                                                                                         
+        </br>                                                                                                                          
         </Form.Text>
         <a href="#" className="btn btn-outline-danger">{props.textbutton}</a>
         </Form.Group>
