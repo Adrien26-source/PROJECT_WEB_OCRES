@@ -1,10 +1,10 @@
 import React from 'react';
 import './Bloc-style.css';
-import Objet from './objet.js';
+import Objet2 from './objet2.js';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
-const Testobjet = props => {
+const Testobjet2 = props => {
   return(
     <div className="bloc text-center">
       <div className="overflow">
@@ -15,8 +15,12 @@ const Testobjet = props => {
         <p className="bloc-text text-primary">
             {props.description}
         </p>
-        <Objet />
+        <Objet2 />
       </div>
+      <h5 className="bloc-body text-danger">30% : Golden Retriver</h5>
+      <h5 className="bloc-body text-primary">40% : Chiwawa</h5>
+      <h5 className="bloc-body text-black">20% : Toy Poodle</h5>
+      <h5 className="bloc-body text-success">10% : Husky de Sibérie</h5>
       <Form>
         <Form.Group controlId="formBasicEmail">
         <Form.Control type="email" placeholder="Nom de l'animal" />
@@ -25,20 +29,12 @@ const Testobjet = props => {
         </br>
         <Form.Group>
         <Button variant="success" type="submit">
-          Ajouter un animal
+        Changer le type d'animal
         </Button>
         <br>
         </br>
         <br>
         </br>
-        <Button variant="danger" type="submit">
-          Retirer un animal 
-        </Button>
-        <br>
-        </br>
-        <br>
-        </br>
-        <a href="#" className="btn btn-outline-warning">{props.textbutton}</a>
         </Form.Group>
         </Form>
       </div>
@@ -46,4 +42,4 @@ const Testobjet = props => {
   );
 }
 
-export default Testobjet;
+export default Testobjet2;

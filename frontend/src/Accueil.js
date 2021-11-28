@@ -7,8 +7,12 @@ import image3 from './images/panda.jpg';
 import Testventes from './test-ventes.js'
 import Testgraphique from './Test-graphiques.js'
 import Testobjet from './Test-objet.js'
+import Testobjet2 from './Test-objet2.js'
 import Testproduits from './Test-produits.js'
+import Testproduits2 from './Test-produits2.js'
 import Testform from './formulaire.js'
+import Testform2 from './formulaire2.js'
+
 import './Bloc-style.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -39,9 +43,13 @@ class Accueil extends Component {
     <div>
     <Router>
       <div>
-        <Link to="/Connexion" className="btn btn-outline-info">Connexion</Link>
-        <Link to="/MenuVisiteur" className="btn btn-outline-info">MenuVisiteur</Link>
-        <Link to="/MenuEmploye" className="btn btn-outline-info">MenuEmploye</Link>
+        <Link to="/Connexion" className="btn btn-outline-info">Page 1 : Connexion</Link>
+        <Link to="/MenuVisiteur" className="btn btn-outline-info">Page 2.1 : MenuVisiteur</Link>
+        <Link to="/MenuEmploye" className="btn btn-outline-info">Page 2.2 : MenuEmploye</Link>
+        <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Animal Exchange</h2>
+        <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        Adrien Cherqui Naoki Arnaud TD04 ING4 OCRES</h2>
         <Switch>
           <Route path="/Connexion">
             <Connexion />
@@ -98,7 +106,7 @@ function MenuEmploye() {
     <div className="container-fluid d-flex justify-content-center">
     <div className="row">
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant que visiteur"/>
+        <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant qu'Employé"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
         <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles" description="Le nombre disponible par type d'animal"/>
@@ -111,13 +119,13 @@ function MenuEmploye() {
   <div className="container-fluid d-flex justify-content-center">
     <div className="row">
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testobjet textbutton="Voir détails" title="Tableau du poids des animaux" description="Tableau"/>
+        <Testobjet2 title="Diagramme circulaire de la répartition des races d'un type d'animal" description="Diagramme circulaire"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testproduits image1={image1} image2={image2} image3={image3}/>
+        <Testproduits2 image1={image1} image2={image2} image3={image3}/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testform textbutton="Voir détails" title="Ventes" description="ventes"/>
+        <Testform2 textbutton="Voir détails" title="Ventes" description="ventes"/>
       </div>
     </div>
   </div>

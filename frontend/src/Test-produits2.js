@@ -1,12 +1,12 @@
 import React from 'react';
 import './Bloc-style.css';
 
-const Testproduits = props => {
+const Testproduits2 = props => {
   return(
     <div className="bloc text-center">
       <br>
         </br>
-      <h4 className="bloc-title text-danger">Les nouveaux animaux</h4>
+      <h4 className="bloc-title text-danger">Les nouvelles mises en vente :</h4>
       <br>
         </br>
       <div className="overflow">
@@ -21,7 +21,7 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Chien
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <a href="#" className="btn btn-outline-primary">Supprimer</a>
       </div>
       <div className="overflow">
         <img src={props.image2} alt="image2" className="bloc-img-top photos"/>
@@ -35,7 +35,7 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Chat
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <a href="#" className="btn btn-outline-primary">Supprimer</a>
       </div>
       <div className="overflow">
         <img src={props.image3} alt="image3" className="bloc-img-top photos"/>
@@ -49,7 +49,7 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Panda
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <a href="#" className="btn btn-outline-primary">Supprimer</a>
         <br>
         </br>
         <br>
@@ -60,4 +60,4 @@ const Testproduits = props => {
   );
 }
 
-export default Testproduits;
+export default Testproduits2;
