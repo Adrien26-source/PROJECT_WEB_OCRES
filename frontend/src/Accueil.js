@@ -39,14 +39,14 @@ class Accueil extends Component {
     <div>
     <Router>
       <div>
-        <Link to="/Menu" className="btn btn-outline-info">Menu</Link>
         <Link to="/Connexion" className="btn btn-outline-info">Connexion</Link>
+        <Link to="/MenuVisiteur" className="btn btn-outline-info">MenuVisiteur</Link>
         <Switch>
           <Route path="/Connexion">
             <Connexion />
           </Route>
-          <Route path="/Menu">
-            <Menu />
+          <Route path="/MenuVisiteur">
+            <MenuVisiteur />
           </Route>
         </Switch>
       </div>
@@ -57,7 +57,7 @@ class Accueil extends Component {
   }
 }
 
-function Menu() {
+function MenuVisiteur() {
   return (<div>
     <div className="container-fluid d-flex justify-content-center">
     <div className="row">
