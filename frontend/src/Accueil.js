@@ -75,7 +75,7 @@ function MenuVisiteur() {
   <div className="container-fluid d-flex justify-content-center">
     <div className="row">
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testobjet textbutton="Voir détails" title="Animalerie" description="animaux"/>
+        <Testobjet textbutton="Voir détails" title="Tableau du poids des animaux" description="Tableau"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
         <Testproduits image1={image1} image2={image2} image3={image3}/>
@@ -98,27 +98,28 @@ function Connexion() {
     <div className="bloc text-center">
       <Form>
         <Form.Group controlId="formBasicEmail">
-        <Form.Label>Prénom</Form.Label>
-        <Form.Control  placeholder="Entrez votre prénom" name="prenom"/>
+        <h4 className="bloc-title">Log in :</h4>
+        <br>
+        </br>
+        <Form.Label>Nom :</Form.Label>
+        <Form.Control  placeholder="Entrez votre Nom" name="Nom"/>
         </Form.Group>
-
+        <br>
+        </br>
         <Form.Group controlId="formBasicEmail">
-        <Form.Label>Nom</Form.Label>
-        <Form.Control  placeholder="Entrez votre nom" name="nom"/>
+        <Form.Label>Prénom :</Form.Label>
+        <Form.Control  placeholder="Entrez votre Prenom" name="Prenom"/>
         </Form.Group>
-
+        <br>
+        </br>
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Statut</Form.Label>
-          <Form.Control  placeholder="Entrez votre statut" name="statut"/>
-          <Form.Text className="text-muted">
-            Employe ou Visiteur
-          </Form.Text>
+          <Form.Label>Type :</Form.Label>
+          <Form.Control  placeholder="Visiteur/Employe" name="Visiteur/Employe"/>
         </Form.Group>
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Certification" />
-        </Form.Group>
-        <Button variant="warning" type="submit">
-          Ajout aux employés ou aux visiteurs
+        <br>
+        </br>
+        <Button variant="danger" type="submit">
+          Se connecter
         </Button>
       </Form>
     </div>
@@ -130,21 +131,32 @@ function Connexion() {
   <div className="col-md-4 col-xs-12 col-sm-6">
 <div className="bloc text-center">
 
-  <div className="bloc-body text-dark">
-    <h4 className="bloc-title">Denis Alfonse</h4>
-    <p className="bloc-text text-secondary">
-        Statut : Employé
-    </p>
-    <a href="#" className="btn btn-outline-warning">Supprimer</a>
-  </div>
-
-  <div className="bloc-body text-dark">
-    <h4 className="bloc-title">Eric Albert</h4>
-    <p className="bloc-text text-secondary">
-        Statut : Visiteur
-    </p>
-    <a href="#" className="btn btn-outline-warning">Supprimer</a>
-  </div>
+        <Form>
+        <Form.Group controlId="formBasicEmail">
+        <h4 className="bloc-title">Sign in :</h4>
+        <br>
+        </br>
+        <Form.Label>Nom :</Form.Label>
+        <Form.Control  placeholder="Entrez votre Nom" name="Nom"/>
+        </Form.Group>
+        <br>
+        </br>
+        <Form.Group controlId="formBasicEmail">
+        <Form.Label>Prénom :</Form.Label>
+        <Form.Control  placeholder="Entrez votre Prenom" name="Prenom"/>
+        </Form.Group>
+        <br>
+        </br>
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Adresse Mail :</Form.Label>
+          <Form.Control  placeholder="Entrez votre mail" name="AdresseMail"/>
+        </Form.Group>
+        <br>
+        </br>
+        <Button variant="danger" type="submit">
+          Créer un compte
+        </Button>
+      </Form>
 
 </div>
 </div>

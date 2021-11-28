@@ -1,34 +1,32 @@
 import React, { PureComponent } from 'react';
 import {
-    RadialBarChart, RadialBar, Legend,
+  ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend
 } from 'recharts';
 
-const data = [
-    {name: '18-24', uv: 31.47, pv: 2400, fill: '#8884d8'},
-    {name: '25-29', uv: 26.69, pv: 4567, fill: '#83a6ed'},
-    {name: '30-34', uv: 15.69, pv: 1398, fill: '#8dd1e1'},
-    {name: '35-39', uv: 8.22, pv: 9800, fill: '#82ca9d'},
-    {name: '40-49', uv: 8.63, pv: 3908, fill: '#a4de6c'},
-    {name: '50+', uv: 2.63, pv: 4800, fill: '#d0ed57'},
-    {name: 'unknow', uv: 6.67, pv: 4800, fill: '#ffc658'}
-  ];
-  
-const style = {
-    top: 0,
-    left: 350,
-    lineHeight: '24px'
-};
+const data01 = [{x: 100, y: 10}, {x: 120, y: 5},
+  {x: 60, y: 6}, {x: 40, y: 4},
+  {x: 90, y: 8}, {x: 110, y: 14}];
+const data02 = [{x: 70, y: 5}, {x: 30, y: 8},
+  {x: 40, y: 3}, {x: 20, y: 7},
+  {x: 50, y: 4.5}, {x: 68, y: 4}];
 
 
-export default class Radars extends PureComponent {
-  static jsfiddleUrl = 'https://jsfiddle.net/9km41z5z/3210/';
+export default class Objet extends PureComponent {
+  static jsfiddleUrl = 'https://jsfiddle.net/3mw50Lc9/1117/';
 
   render() {
+    
     return (
-        <RadialBarChart width={500} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={10} data={data}>
-        <RadialBar minAngle={15}  background clockWise={true} dataKey='uv'/>
-        <Legend iconSize={10} width={120} height={140}  verticalAlign='middle' wrapperStyle={style}/>
-        </RadialBarChart>
+      <ScatterChart width={400} height={400} margin={{top: 20, right: 50, bottom: 0, left: 20}}>
+      	<XAxis type="number" dataKey={'x'} name='taille' unit='cm'/>
+      	<YAxis type="number" dataKey={'y'} name='poids' unit='kg'/>
+        <CartesianGrid />
+      	<Tooltip cursor={{strokeDasharray: '3 3'}}/>
+        <Legend />
+        <Legend />
+      	<Scatter name='Chien' data={data01} fill='red' shape="circle"/>
+        <Scatter name='Chat' data={data02} fill='blue' shape="square"/>
+      </ScatterChart>
     );
   }
 }
