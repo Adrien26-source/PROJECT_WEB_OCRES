@@ -41,12 +41,16 @@ class Accueil extends Component {
       <div>
         <Link to="/Connexion" className="btn btn-outline-info">Connexion</Link>
         <Link to="/MenuVisiteur" className="btn btn-outline-info">MenuVisiteur</Link>
+        <Link to="/MenuEmploye" className="btn btn-outline-info">MenuEmploye</Link>
         <Switch>
           <Route path="/Connexion">
             <Connexion />
           </Route>
           <Route path="/MenuVisiteur">
             <MenuVisiteur />
+          </Route>
+          <Route path="/MenuEmploye">
+            <MenuEmploye />
           </Route>
         </Switch>
       </div>
@@ -58,6 +62,38 @@ class Accueil extends Component {
 }
 
 function MenuVisiteur() {
+  return (<div>
+    <div className="container-fluid d-flex justify-content-center">
+    <div className="row">
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant que visiteur"/>
+      </div>
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles" description="Le nombre disponible par type d'animal"/>
+      </div>
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Testgraphique textbutton="Modifier" title="Achats" description="Achats des animaux en €"/>
+      </div>
+    </div>
+  </div>
+  <div className="container-fluid d-flex justify-content-center">
+    <div className="row">
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Testobjet textbutton="Voir détails" title="Tableau du poids des animaux" description="Tableau"/>
+      </div>
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Testproduits image1={image1} image2={image2} image3={image3}/>
+      </div>
+      <div className="col-md-4 col-xs-12 col-sm-6">
+        <Testform textbutton="Voir détails" title="Ventes" description="ventes"/>
+      </div>
+    </div>
+  </div>
+</div>
+  );
+}
+
+function MenuEmploye() {
   return (<div>
     <div className="container-fluid d-flex justify-content-center">
     <div className="row">
