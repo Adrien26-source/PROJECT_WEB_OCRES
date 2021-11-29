@@ -32,6 +32,11 @@ body{
     margin-top: 0px;
   }
   
+  img.imageAccueil {
+    height: 250px;
+    width: 500px;
+    margin-left: 520px;
+  }
   img.photos{
     height: 220px;
     width: 280px;

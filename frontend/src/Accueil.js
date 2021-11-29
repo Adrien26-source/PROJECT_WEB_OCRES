@@ -13,7 +13,6 @@ import Testproduits from './Test-produits.js'
 import Testproduits2 from './Test-produits2.js'
 import Testform from './formulaire.js'
 import Testform2 from './formulaire2.js'
-
 import './Bloc-style.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -49,6 +48,7 @@ class Accueil extends Component {
         <Link to="/MenuEmploye" className="btn btn-outline-info">Page 2.2 : MenuEmploye</Link>
         <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Animal Exchange</h2>
+        <img src="https://lh3.googleusercontent.com/proxy/qrOKbsaCXc3cG560LGMghgPbp9pjOylUaKgwiekav4y_KJ_xZgE_03S9X_UejGNEY9OH9Noe8ZEyux2dsDb4sHRSbqxjfwfhQww" alt="imageAccueil" className="bloc-img-left imageAccueil"/>
         <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         Adrien Cherqui Naoki Arnaud TD04 ING4 OCRES</h2>
         <Switch>
