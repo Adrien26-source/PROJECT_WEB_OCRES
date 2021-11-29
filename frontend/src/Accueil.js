@@ -6,6 +6,7 @@ import image2 from './images/chat.jpg';
 import image3 from './images/panda.jpg';
 import Testventes from './test-ventes.js'
 import Testgraphique from './Test-graphiques.js'
+import Testgraphique2 from './Test-graphiques2.js'
 import Testobjet from './Test-objet.js'
 import Testobjet2 from './Test-objet2.js'
 import Testproduits from './Test-produits.js'
@@ -112,7 +113,7 @@ function MenuEmploye() {
         <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles" description="Le nombre disponible par type d'animal"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testgraphique textbutton="Modifier" title="Achats" description="Achats des animaux en €"/>
+        <Testgraphique2 textbutton="Modifier" title="Ventes" description="Ventes des animaux en €"/>
       </div>
     </div>
   </div>
