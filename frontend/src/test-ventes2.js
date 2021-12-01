@@ -2,6 +2,7 @@ import React from 'react';
 import './Bloc-style.css';
 import Ventes2 from './ventes2.js'
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Testventes2 = props => {
   return(
@@ -29,7 +30,9 @@ const Testventes2 = props => {
         <br>                                                                                             
         </br>                                                                                                                          
         </Form.Text>
-        <a href="#" className="btn btn-outline-danger">{props.textbutton}</a>
+        <Button variant="primary" type="submit">
+          Mettre en vente
+        </Button>
         </Form.Group>
         </Form>
       </div>

@@ -28,7 +28,7 @@ const Testobjet2 = props => {
         <br>
         </br>
         <Form.Group>
-        <Button variant="success" type="submit">
+        <Button variant="primary" type="submit">
         Changer le type d'animal
         </Button>
         <br>

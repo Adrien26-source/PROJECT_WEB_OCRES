@@ -1,5 +1,8 @@
 import React from 'react';
 import './Bloc-style.css';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
 
 const Produits = props => {
   return(
@@ -17,7 +20,9 @@ const Produits = props => {
         </p>
         <br> 
         </br>
-        <a href="#" className="btn btn-outline-danger">{props.textbutton}</a>
+        <Button variant="danger" type="submit">
+          Se déconnecter
+        </Button>
       </div>
     </div>
   );

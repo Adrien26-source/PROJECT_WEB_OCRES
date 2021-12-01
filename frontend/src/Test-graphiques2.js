@@ -2,6 +2,7 @@ import React from 'react';
 import './Bloc-style.css';
 import Graphique2 from './graphiques2.js'
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Testgraphique2 = props => {
   return(
@@ -23,7 +24,9 @@ const Testgraphique2 = props => {
         <br>                                                                                             
         </br>                                                                                                                         
         </Form.Text>
-        <a href="#" className="btn btn-outline-danger">{props.textbutton}</a>
+        <Button variant="primary" type="submit">
+          Modifier
+        </Button>
         </Form.Group>
         </Form>
       </div>

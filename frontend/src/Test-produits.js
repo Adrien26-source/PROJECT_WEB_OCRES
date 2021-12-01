@@ -1,5 +1,6 @@
 import React from 'react';
 import './Bloc-style.css';
+import Button from 'react-bootstrap/Button';
 
 const Testproduits = props => {
   return(
@@ -21,7 +22,9 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Chien
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <Button variant="danger" type="submit">
+          Acheter
+        </Button>
       </div>
       <div className="overflow">
         <img src={props.image2} alt="image2" className="bloc-img-top photos"/>
@@ -35,7 +38,9 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Chat
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <Button variant="danger" type="submit">
+          Acheter
+        </Button>
       </div>
       <div className="overflow">
         <img src={props.image3} alt="image3" className="bloc-img-top photos"/>
@@ -49,12 +54,16 @@ const Testproduits = props => {
         <p className="bloc-text text-primary">
             Panda
         </p>
-        <a href="#" className="btn btn-outline-danger">Acheter</a>
+        <Button variant="danger" type="submit">
+          Acheter
+        </Button>
         <br>
         </br>
         <br>
         </br>
-        <a href="#" className="btn btn-outline-warning">Voir plus de résulats</a>
+        <Button variant="warning" type="submit">
+        Voir plus de résultats
+        </Button>
       </div>
     </div>
   );

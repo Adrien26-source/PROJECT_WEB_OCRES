@@ -38,7 +38,9 @@ const Testobjet = props => {
         </br>
         <br>
         </br>
-        <a href="#" className="btn btn-outline-warning">{props.textbutton}</a>
+        <Button variant="warning" type="submit">
+          Voir détails 
+        </Button>
         </Form.Group>
         </Form>
       </div>
