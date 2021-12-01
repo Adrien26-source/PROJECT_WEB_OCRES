@@ -20,6 +20,7 @@ https://jsfiddle.net/3mw50Lc9/1117/
 https://jsfiddle.net/c9pL8k61/6206/
 https://jsfiddle.net/alidingling/gawLqyom/
 https://jsfiddle.net/nskpgcrz/1422/
+https://jsfiddle.net/ucdl/2yr7e4a5/5/
 Code : 
 https://github.com/lesfurets/react-responsive-widget
 https://github.com/ThomasGeigerCode/19_20_TWOIng4_Project (Inspiration de la structure du code uniquement)
