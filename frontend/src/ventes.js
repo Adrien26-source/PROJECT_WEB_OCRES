@@ -7,9 +7,9 @@ import {
 
 // Data for current year
 const data1 = [
-    {name: 'Chien', animal: 2500},
-    {name: 'Chat', animal: 5000},
-    {name: 'Hamster', animal: 9000},
+    {name: 'Chien', animal: 20},
+    {name: 'Chat', animal: 15},
+    {name: 'Hamster', animal: 10},
 ];
 
 

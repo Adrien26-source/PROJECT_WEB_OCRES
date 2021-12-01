@@ -1,10 +1,13 @@
 import React, {Component} from 'react'
 import Produits from './Produits.js'
+import Produits2 from './Produits2.js'
 import imageprofil from './images/employe.png';
+import imageprofil2 from './images/visiteur.PNG';
 import image1 from './images/chien.jpg';
 import image2 from './images/chat.jpg';
 import image3 from './images/panda.jpg';
 import Testventes from './test-ventes.js'
+import Testventes2 from './test-ventes2.js'
 import Testgraphique from './Test-graphiques.js'
 import Testgraphique2 from './Test-graphiques2.js'
 import Testobjet from './Test-objet.js'
@@ -48,7 +51,7 @@ class Accueil extends Component {
         <Link to="/MenuEmploye" className="btn btn-outline-info">Page 2.2 : MenuEmploye</Link>
         <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Animal Exchange</h2>
-        <img src="https://lh3.googleusercontent.com/proxy/qrOKbsaCXc3cG560LGMghgPbp9pjOylUaKgwiekav4y_KJ_xZgE_03S9X_UejGNEY9OH9Noe8ZEyux2dsDb4sHRSbqxjfwfhQww" alt="imageAccueil" className="bloc-img-left imageAccueil"/>
+        <img src="https://www.purina.fr/sites/default/files/2018-02/4_6.jpg" alt="imageAccueil" className="bloc-img-left imageAccueil"/>
         <h2 className="bloc-body text-warning">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
         Adrien Cherqui Naoki Arnaud TD04 ING4 OCRES</h2>
         <Switch>
@@ -107,10 +110,10 @@ function MenuEmploye() {
     <div className="container-fluid d-flex justify-content-center">
     <div className="row">
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Produits imgsrc={imageprofil} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant qu'Employé"/>
+        <Produits2 imgsrc={imageprofil2} textbutton="Se déconnecter" title="Denis Alfonse" description="Connecté en tant qu'Employé"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
-        <Testventes textbutton="Ajouter un animal" title="Liste des animaux disponibles" description="Le nombre disponible par type d'animal"/>
+        <Testventes2 textbutton="Mettre en vente" title="Liste des animaux mis en vente" description="Le nombre et le type d'animaux mis en vente"/>
       </div>
       <div className="col-md-4 col-xs-12 col-sm-6">
         <Testgraphique2 textbutton="Modifier" title="Ventes" description="Ventes des animaux en €"/>
