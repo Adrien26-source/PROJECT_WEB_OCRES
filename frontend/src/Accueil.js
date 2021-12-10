@@ -26,13 +26,14 @@ import {
   Link
 } from "react-router-dom";
 import axios from 'axios';
-
+// import tous les components
 class Accueil extends Component {
 
   state = {
     users: []
   }
 
+  //pour recuperer les donnees
   compnentDidMount(){
     axios.get('https://localhost:3000/get-data').then(res => {
       console.log(res);
@@ -40,7 +41,7 @@ class Accueil extends Component {
     });
 
   }
-
+//Affichage sur notre site web
   render() {
     return (
     <div>
@@ -72,7 +73,7 @@ class Accueil extends Component {
     );
   }
 }
-
+//Page MenuVisiteur
 function MenuVisiteur() {
   return (<div>
     <div className="container-fluid d-flex justify-content-center">
@@ -105,6 +106,7 @@ function MenuVisiteur() {
   );
 }
 
+//Page MenuEmploye
 function MenuEmploye() {
   return (<div>
     <div className="container-fluid d-flex justify-content-center">
@@ -136,7 +138,7 @@ function MenuEmploye() {
 </div>
   );
 }
-
+////Page Connexion
 function Connexion() {
   return (
     <div>

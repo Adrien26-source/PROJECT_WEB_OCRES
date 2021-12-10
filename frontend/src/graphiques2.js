@@ -4,7 +4,7 @@ import './App.css';
 import {
     LineChart, Line, AreaChart, Area, Brush, XAxis, YAxis, CartesianGrid, Tooltip
 } from 'recharts';
-
+// widget graphique vente des animaux
 const data = [
     {
       name: 'Janvier', VentesDesAnimaux: 3000, amt: 2400,

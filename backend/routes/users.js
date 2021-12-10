@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   //res.send('respond with a resource');
   res.render('users');
 });
-
+// méthode post pour créer un utilisateur
 router.post('/users', async (req,res) => {
 
   const Utilisateur = new Utilisateur({

@@ -4,7 +4,7 @@ import './App.css';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
-
+// widget graphique achat des animaux 
 const data = [
   {
     name: 'Janvier', AchatDesAnimaux: 3000, amt: 2400,
@@ -49,6 +49,7 @@ export default class Graphique extends PureComponent {
 
   render() {
     return (
+      //Affichage de notre LineChart
       <LineChart
         width={300}
         height={300}

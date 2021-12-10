@@ -13,7 +13,7 @@ const data = [
     { name: "Gold", chats: 5, chiens : 5},
   ];
   
-
+//widget liste des animaux mis en vente 
 
 export default class Ventes2 extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/ucdl/2yr7e4a5/5/';
@@ -21,7 +21,7 @@ export default class Ventes2 extends PureComponent {
   render() {
 
     return (
-  
+  //Line chart des animaux mis en vente
             <LineChart
               width={400}
               height={200}

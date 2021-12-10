@@ -12,12 +12,13 @@ const data1 = [
     {name: 'Hamster', animal: 10},
 ];
 
-
+//Widget liste animaux disponibles 
 export default class Ventes extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/gawLqyom/';
 
   render() {
     return (
+      //histogramme liste des animaux disponibles 
             <BarChart width={290} height={290} data={data1} stackOffset="sign"
             margin={{top: 50, right: 0, left: 50, bottom: -30}}>
        <CartesianGrid strokeDasharray="3 3"/>

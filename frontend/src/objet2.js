@@ -20,7 +20,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
 
 
-
+//widget repartition races d'un type animal
 
 export default class Objet2 extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/c9pL8k61/6206/';
@@ -29,6 +29,7 @@ export default class Objet2 extends PureComponent {
 
 
     return (
+      //Diagramme circulaire
     	<PieChart width={800} height={300} onMouseEnter={this.onPieEnter}>
         <Pie
           data={data} 

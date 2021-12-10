@@ -2,6 +2,7 @@ import React from 'react';
 import './Bloc-style.css';
 import Button from 'react-bootstrap/Button';
 
+//Pour avoir le profil utilisateur 
 const Produits2 = props => {
   return(
     <div className="bloc text-center">

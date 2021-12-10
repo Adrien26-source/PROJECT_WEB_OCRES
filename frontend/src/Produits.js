@@ -3,7 +3,7 @@ import './Bloc-style.css';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-
+//Pour avoir le profil utilisateur 
 const Produits = props => {
   return(
     <div className="bloc text-center">

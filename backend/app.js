@@ -10,6 +10,7 @@ var usersRouter = require("./routes/users");
 var app = express();
 
 const Utilisateur = require('./routes/BaseDeDonnees');
+//Connexion à la base de donnees
 var mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://AdrienCherqui:covidiot007@clusteranimaux.ruquf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', 
 
@@ -26,10 +27,12 @@ app.use(cookieParser());
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use('users/', (req, res, next) => {
+  //Pour trouver l'utilisateur
   Utilisateur.find()
     .then(Utilisateur => res.status(200).json(Utilisateur))
     .catch(error => res.status(400).json({ error }));
 });
+// méthode post pour créer un utilisateur
 app.post('/users', (req, res, next) => {
   delete req.body._id;
   const Utilisateur = new Utilisateur({

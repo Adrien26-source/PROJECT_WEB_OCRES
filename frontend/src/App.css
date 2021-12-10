@@ -50,13 +50,13 @@ background-color: turquoise;
 }
 
 section.bg {
-  /* The image used */
+  /* l'image utilisé */
   background-image: url("https://www.aquaportail.com/pictures1806/animalerie.jpg");
 
-  /* Full height */
+  /* En Full height */
   height: 100%;
 
-  /* Center and scale the image nicely */
+  /* Pour centrer l'image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
